@@ -2,7 +2,7 @@
 # Project: USBaspLoader
 # Author: Christian Starkjohann
 # Creation Date: 2007-12-10
-# Author: Stephan Bärwolf
+# Author: Stephan Bï¿½rwolf
 # Improvement Date: 2012-07-31
 # Improvement Date: 2012-09-12
 # Tabsize: 4
@@ -72,7 +72,7 @@ else
 	$(RM) *~
 endif
 
-clean: 
+clean:
 	$(RM) main.hex
 	$(RM) main.asm
 	$(RM) main.map
@@ -107,7 +107,7 @@ main.hex: main.elf main.asm $(DEPENDS)
 	$(ECHO) "!!!ATTANTION!!!"
 	$(ECHO) "(data+text) MUST fit into your MCUs bootloader section"
 	$(ECHO) "."
-	$(SIZ) --mcu $(DEVICE) main.elf
+	$(SIZ) main.elf
 	$(ECHO) "."
 	$(ECHO) "."
 	$(ECHO) "."
